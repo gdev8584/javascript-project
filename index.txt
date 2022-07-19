@@ -1,0 +1,92 @@
+.tv2 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 650px;
+        height: 450px;
+        margin-top: -1px;
+        /* overflow: hidden; */
+    }
+    .tv2 img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 650px;
+        height: 450px;
+        /* overflow: hidden; */
+        filter: drop-shadow(0 2px 10px rgba(0,0,0,0.2));
+    }
+    
+    .tv2 video {
+        width: 600px;
+        height: 230px;
+        margin-top: -10px;
+
+// logo ke liye
+    <div class="logo">
+            <div><img src="./asserts/netflix-logo-png-2562.png"></div>
+            <div class="btn">
+                <ul>
+                    <li><i class="fa-solid fa-globe"></i>
+                        <select id="English">
+                            <option value="english">English</option>
+                    <!-- <option value="english">हिन्दी</option> -->
+                        </select>
+                    </li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
+            </div>
+
+
+
+
+
+// 
+.container {
+        width: 100%;
+        margin:  0 auto;
+        padding: 0 20px;
+    }
+    .accordion-item {
+        padding: 16px;
+        box-shadow: 8px 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    a {
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(59, 56, 56);
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 20px;
+        margin: 30px 20px 1px 20px;
+    }
+    .container .fa-xmark {
+        display: none;
+    }
+    .ans {
+        max-height: 0;
+        overflow: hidden;
+        position: relative;
+        font-size: 20px;
+        background-color: rgb(59, 56, 56);
+        transition: max-height 650ms;
+    }
+    .ans::before {
+        content: "";
+        position: absolute;
+        width: 20px
+    }
+    .accordion-item:target .ans {
+        max-height: 20rem;
+    }
+    .accordion-item:target  .fa-add {
+        display: none;
+    }
+    .accordion-item:target .fa-xmark {
+        display: block;
+    }
