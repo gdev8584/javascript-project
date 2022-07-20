@@ -12,6 +12,7 @@
 body {
     background-color: black;
 }
+/* <!-- .................................................first page.............................................................. --> */
 .header{
     height: 100vh;
     width: 100%;
@@ -183,6 +184,7 @@ input:focus+label,
     border-radius: 3px;
     font-size: 30px;
 }
+/* <!-- .................................................end.............................................................. --> */
 /* hr line understand */
 hr {
     border: none;
@@ -314,6 +316,7 @@ hr {
         /* z-index: 1; */
     }
 }
+/* <!-- .................................................end second page.............................................................. --> */
 /* hr line understand */
 .mobile {
     height: 70vh;
@@ -499,6 +502,7 @@ hr {
                     color: blue;
                 }
     }
+    /* <!-- .................................................end third page.............................................................. --> */
 
     .menjoy {
         height: 70vh;
@@ -625,6 +629,7 @@ hr {
             /* z-index: 1; */
         }
     }
+    /* <!-- .................................................end four page.............................................................. --> */
     .cmobile {
         height: 70vh;
         width: 100%;
@@ -739,6 +744,7 @@ hr {
                     /* z-index: ; */
                     }
         }
+        /* <!-- .................................................end five page.............................................................. --> */
 .faq {
         height: auto;
         width: 100%;
@@ -850,6 +856,7 @@ hr {
         border-radius: 3px;
         font-size: 30px;
     }
+    /* <!-- .................................................end seven page.............................................................. --> */
     .footer {
         /* background-color: aqua; */
         height: 50vh;
@@ -914,9 +921,9 @@ hr {
         outline: none;
         border: none;
     }
-    
+    /* <!-- .................................................end page.............................................................. --> */
 
-
+/* <!-- .................................................Responsive first page.............................................................. --> */
 @media screen and (max-width: 948px) {
     .logo img {
         margin-top: 27px;
@@ -947,7 +954,7 @@ hr {
         z-index: 3;
     }
     .para h1 {
-        font-size: 50px;
+        font-size: 6vw;
         font-weight: 600;
         text-align: center;
         line-height: 42pt;
@@ -1025,7 +1032,7 @@ hr {
         margin-bottom: 5px;
     }
     .para .p1 {
-        font-size: 25px;
+        font-size: 4vw;
         margin-top: 17px;
         text-align: center;
         text-shadow: 0 1px 0 black;
@@ -1034,7 +1041,7 @@ hr {
     .para .p2 {
         text-align: center;
         margin-top: 20px;
-        font-size: 18px;
+        font-size: 3vw ;
         margin: 20px 110px 0 120px;
         text-shadow: 0 1px 0 black;
     }
