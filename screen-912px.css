@@ -1,0 +1,660 @@
+@media (min-width:768px) and (max-width:912px) and (min-height:1368px){
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    /* overflow: hidden; */
+}
+body {
+    background-color: black;
+}
+/* <!-- .................................................first page.............................................................. --> */
+.header{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.4),rgba(0,0,0,0.8)),url(./asserts/Background.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px auto 10px;
+}
+.logo {
+     grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+.netfix{
+    grid-column: 1/7;
+}
+.btn {
+    grid-column: 8/9;
+    width: 100px;
+    height: 35px;
+    margin-top: 30px;
+    margin-right: 46px;
+    background-color: rgba(234, 28, 28, 0.932);
+    border-radius: 4px;
+    text-align: center;
+    padding: 5px 1px;
+    cursor: pointer;
+}
+.btn a{
+    color: white;
+    font-size: 80%;
+}
+
+/* .btn1 {
+    /* position: absolute;
+    left: 80%; */
+    /* width: 105px;
+    height: 35px;
+    margin-top: 30px;
+    margin-right: 46px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 4px;
+    text-align: center;
+    padding: 5px  1px; */
+    /* cursor: pointer; */
+/*} */
+.btn1 {
+    grid-column: 7/8;
+    width: 100px;
+    height: 35px;
+    text-decoration: none;
+    color: white;
+    margin: 30px;
+    border: 1px solid white;
+    /* font-size: 16px; */
+}
+.btn1 i {
+    font-size: 14px;
+    padding-left: 4px;
+}
+.btn1 option {
+    background-color: black;
+}
+.btn1 #English {
+    background-color: transparent;
+    font-size: 90%;
+    color: white;
+    outline: none;
+    border: none;
+    padding-top: 5px;
+}
+.logo img {
+    margin-top: 25px;
+    margin-left: 50px;
+    width: 178px;
+    height: 54px;
+}
+.para {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 100px;
+    left: 50%;
+    right: 50%;
+    transform: translate(12%);
+    z-index: 3;
+}
+.para h1 {
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 49pt;
+    text-shadow: 0 5px 0 black;
+}
+.para .p1 {
+    font-size: 27px;
+    margin-top: 35px;
+    text-align: center;
+    text-shadow: 0 1px 0 black;
+}
+.para .p2 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+    text-shadow: 0 1px 0 black;
+}
+.int1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.para input {
+    margin-top: 30px;
+    width: 500px;
+    height: 70px;
+    padding-left: 10px;
+    font-size: medium;
+    outline: none;
+    border-bottom: 3px solid rgb(246, 174, 7);
+}
+/* move placeholder top */
+.input-wrap label {
+    color: rgb(116, 112, 112);
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    pointer-events: none;
+    transition: 0.3s ease all;
+}
+.input-wrap{
+    position: relative;
+    width: auto;
+    height: auto;
+}
+input:focus+label,
+.input:valid+label{
+    font-weight: 600;
+    font-size: small;
+    top:20px;
+    left:17px;
+    padding: 0 5px 0 5px;
+}
+/* down input coding */
+.input-wrap1 label {
+    color: rgb(116, 112, 112);
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    pointer-events: none;
+    transition: 0.3s ease all;
+}
+.input-wrap1{
+    position: relative;
+    width: auto;
+    height: auto;
+}
+.input1:focus+label,
+.input1:valid+label{
+    font-weight: 600;
+    font-size: small;
+    top:5px;
+    left:17px;
+    padding: 0 5px 0 5px;
+}
+.para a {
+    margin-top: 30px;
+    width: 250px;
+    text-decoration: none;
+    height: 70px;
+    background-color: rgba(235, 22, 22, 0.975);
+    color: white;
+    text-align: center;
+    padding-top: 12px;
+    border-radius: 3px;
+    font-size: 30px;
+}
+/* <!-- .................................................end.............................................................. --> */
+/* hr line understand */
+hr {
+    border: none;
+    background-color: rgb(50, 48, 46);
+    height: 8px;
+}
+/* NEXT PAGE-------- */
+.enjoy {
+    height: 30vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: black;
+    background-size: auto;
+    padding: 100px , 0;
+}
+.tv1 {
+    grid-column: 1/2;
+    /* background: blue; */
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: 25%;
+    /* margin-left: 20%; */
+    
+}
+.tv1 h1 {
+    margin-left: 25%;
+    text-align: start;
+    font-size: 3vw;
+    font-weight: 600;
+    top: 15%;
+}
+.tv1 p{
+    margin-top: 1%;
+    font-size: 2vw;
+    margin-left: 25%;
+    text-align: start;
+    
+}
+.tv2 {
+    width: 80%;
+    grid-column: 2/3;
+    height: 70vh;
+    /* background-color: brown; */
+    overflow: hidden;
+    position: relative;
+    margin: 30px;
+}
+.tv2 img {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%,-2%);
+    z-index: 9;
+}
+.tv2 video{
+    position: absolute;
+    height: auto;
+    width: 75%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50% ,30%);
+    /* z-index: 1; */
+}
+
+/* <!-- .................................................end second page.............................................................. --> */
+/* hr line understand */
+.mobile {
+    height: 30vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: black;
+    background-size: auto;
+    padding: 100px , 0;
+}
+.mb1 {
+    grid-column: 2/3;
+    /* background: blue; */
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: 20%;
+    /* margin-left: 20%; */
+}
+.mb1 h1 {
+    margin-left: 5%;
+    margin-right: 26%;
+    text-align: start;
+    font-size: 3vw;
+    font-weight: 600;
+    top: 15%;
+}
+.mb1 p {
+    margin-top: 2%;
+    font-size: 2vw;
+    margin-left: 5%;
+    margin-right: 26%;
+    text-align: start;
+}
+.mb2 {
+    width: 100%;
+    height: 70vh;
+    order: -1;
+    grid-column: 1/2;
+    /* background-color: brown; */
+    overflow: hidden;
+    position: relative;
+    margin: 0 15%;
+}
+.mb2 .mb img {
+    position: absolute;
+    height: auto;
+    width: 80%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-54%);
+    /* z-index: ; */
+    }
+.mb2 .x{
+    position: absolute;
+    height: auto;
+    width: 55%;
+    left: 50%;
+    right: 50%;
+    display: flex;
+    border: 2px solid rgb(109, 103, 103);
+    border-radius: 12px;
+    background-color: black;
+    transform: translate(-59% ,370%);
+        /* z-index: 1; */
+    }
+    .i1 img {
+        width: 3vw;
+        margin: 0.3vw;
+    }
+    .i2 img {
+        width: 3vw;
+        position: absolute;
+       left: 50%;
+       right: 50%;
+       transform: translate(300%,28%);
+    }
+    .x .i {
+        font-size: 1vw;
+        position: absolute;
+        margin-left: 14%;
+        margin-top: 4%;
+        color: rgb(247, 238, 238);
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .i span {
+        color: blue;
+    }
+   
+    /* <!-- .................................................end third page.............................................................. --> */
+
+    .menjoy {
+        height: 30vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        background-color: black;
+        background-size: auto;
+    }
+    .mtv1 {
+        grid-column: span 1;
+        color: white;
+        text-align: center;
+        width: 100%;
+        margin-top: 22%;
+        /* margin-left: 20%; */
+        
+    }
+    .mtv1 h1 {
+        margin-left: 25%;
+        text-align: start;
+        font-size: 3vw;
+        font-weight: 600;
+        top: 12%;
+    }
+    .mtv1 p{
+        margin-top: 2%;
+        font-size: 2vw;
+        margin-left: 25%;
+        text-align: start;
+        
+    }
+    .mtv2 {
+        width: 80%;
+        height: 58vh;
+        grid-column: span 1;
+        /* background-color: brown; */
+        overflow: hidden;
+        position: relative;
+        margin: 30px;
+    }
+    .mtv2 img {
+        position: absolute;
+        height: auto;
+        width: 100%;
+        /* transform: translateX(30%); */
+        z-index: 9;
+    }
+    .mtv2 video{
+        position: absolute;
+        height: auto;
+        width: 65%;
+        margin-left: 16%;
+        margin-top: 7%;
+        /* transform: translate(-79% ,-3%); */
+        /* z-index: 1; */
+    }
+    /* <!-- .................................................end four page.............................................................. --> */
+    .cmobile {
+        height: 30vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        background-color: black;
+        background-size: auto;
+        padding: 100px , 0;
+    }
+    .cmb1 {
+        grid-column: 2/3;
+        /* background: blue; */
+        color: white;
+        text-align: center;
+        width: 100%;
+        margin-top: 20%;
+        /* margin-left: 20%; */
+    }
+    .cmb1 h1 {
+        margin-left: 5%;
+        margin-right: 26%;
+        text-align: start;
+        font-size: 2.8vw;
+        font-weight: 600;
+        top: 15%;
+        line-height: 36pt;
+    }
+    .cmb1 p {
+        margin-top: 2%;
+        font-size: 1.5vw;
+        margin-left: 5%;
+        margin-right: 26%;
+        text-align: start;
+        line-height: 23pt;
+    }
+    .cmb2 {
+        width: 100%;
+        height: 70vh;
+        order: -1;
+        grid-column: 1/2;
+        /* background-color: brown; */
+        overflow: hidden;
+        position: relative;
+        padding: 10%;
+    }
+    .cmb2 .cmb img {
+        position: absolute;
+        height: auto;
+        width: 70%;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%,1%);
+            /* transform: translateX(30%); */
+        /* z-index: ; */
+        }
+        /* <!-- .................................................end five page.............................................................. --> */
+.faq {
+        height: auto;
+        width: 100%;
+        color: white;
+        background-size: auto;
+        padding: 100px , 0;
+        display: grid;
+        grid-template-rows: 60px auto ;
+        /* overflow: hidden; */
+    }
+    
+    .faq1 {
+        grid-row: 1/2;
+        margin: 10px 60px 0 20px;
+        display: block;
+    }
+    .faq1 h1 {
+        text-align: center;
+        font-size: 2.7vw;
+        font-weight: 600;
+    }
+    .container {
+        grid-row: 2/3;
+        width: 100%;
+        margin:  10px 0px;
+        padding: 0 0;
+    }
+    .accordian-item {
+        position: relative;
+        margin: 0% 15% 1% 20%;
+        box-shadow: 8px 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .accordian-link {
+        font-size: 1.7vw;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(59, 56, 56);
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 20px;
+        margin-bottom: 1px;
+        /* margin: 5px 20px 1px 20px; */
+    }
+    .accordian-link .fa-xmark {
+        display: none;
+    }
+    .ans {
+        width: 90%;
+        background-color: aqua;
+        max-height: 0;
+        overflow: hidden;
+        position: relative;
+        font-size: 1.6vw;
+        background-color: rgb(59, 56, 56);
+        line-height: 24pt;
+        /* margin: 1px 45px 0 20px; */
+    }
+    .ans p {  
+        padding: 20px;
+    }
+    .accordian-item:target .ans {
+        max-height: 50%;
+    }
+    .accordian-item:target .accordian-link .fa-plus {
+        display: none;
+    }
+    .accordian-item:target .accordian-link .fa-xmark {
+        display: block;
+    }
+    .para1 {
+        grid-row: 3/4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .para1 .p2 {
+        text-align: center;
+        margin-top: 4px;
+        font-size: 18px;
+        text-shadow: 0 1px 0 black;
+    }
+    .int1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8%;
+    }
+    .para1 input {
+        width: 500px;
+        height: 70px;
+        padding-left: 10px;
+        font-size: medium;
+        outline: none;
+        border-bottom: 3px solid rgb(246, 174, 7);
+    }
+    .para1 a {
+        margin-top: 2px;
+        width: 250px;
+        text-decoration: none;
+        height: 70px;
+        background-color: rgba(235, 22, 22, 0.975);
+        color: white;
+        text-align: center;
+        padding-top: 12px;
+        border-radius: 3px;
+        font-size: 30px;
+    }
+    /* <!-- .................................................end seven page.............................................................. --> */
+    .footer {
+        /* background-color: aqua; */
+        height: 30vh;
+        width: 75%;
+        /* display: grid;
+        grid-template-rows: 40px 1fr 40px; */
+    }
+    .ques {
+        width:50%;
+        margin-left: 20%;
+        margin-top: 5%;
+        /* grid-row: 1/2; */
+        color: rgb(109, 105, 105);
+    }
+    .list {
+        width: 70%;
+        margin-top: 2%;
+        margin-left: 20%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        /* grid-row: 2/3;
+        display: grid;
+        grid-template-columns:repeat(4,1fr) ; */
+    }
+    .list ul li a{
+        color: rgb(109, 105, 105);
+        font-size: 80%;
+    }
+    .list ul li {
+        margin-bottom: 3%;
+    }
+    .btn2 {
+        /* grid-row: 3/4; */
+        width: 125px;
+        height: 45px;
+        margin-top: 2%;
+        margin-left: 16%;
+        background-color: transparent;
+        border: 1px solid rgb(108, 106, 106);
+        text-align: center;
+        padding: 5px  1px;
+        /* cursor: pointer; */
+    }
+    .btn2 {
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .btn2 p {
+        margin-top: 25px;
+        text-align: left;
+        color: rgb(90, 86, 86);
+        font-size: 13px;
+    }
+    .btn2 i {
+        font-size: 16px;
+        color: rgb(92, 84, 84);
+    }
+    select {
+        background-color: transparent;
+        color: rgb(120, 115, 115);
+        border: none;
+        font-size: 16px;
+    }
+    #English {
+        background-color: transparent;
+        font-size: 15px;
+        color: white;
+        outline: none;
+        border: none;
+    }
+    /* <!-- .................................................end page.............................................................. --> */
+}
