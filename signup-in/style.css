@@ -1,0 +1,92 @@
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.4),rgba(0,0,0,0.8)),url(./Background.jpeg);
+    background-position: center;
+    background-size: cover;
+    font-family: roboto, sans-serif;
+    z-index: -1;
+}
+.signup-box {
+    width: 400px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.504);
+    margin: auto;
+    border-radius: 10px;
+}
+.login-page {
+    width: 400px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.504);
+    margin: auto;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
+h4{
+    text-align: center;
+}
+form {
+    width: 300px;
+    margin-left: 45px;
+}
+form label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+}
+input[type="submit"]{
+    width: 320px;
+    margin-top: 20px;
+    height: 38px;
+    background-color: rgb(38, 220, 38);
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1rem;
+}
+.account{
+    text-align: center;
+    color: rgb(244, 80, 15);
+    margin-top: -10px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.account a {
+    color: red;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .signup-box {
+        width: 300px;
+        height: 600px;
+        background: white;
+        margin: auto;
+        border-radius: 10px;
+    }
+    .login-page {
+        width: 300px;
+        height: 300px;
+        background: white;
+        margin: auto;
+        border-radius: 10px;
+    }
+    input, input[type="submit"] {
+      width: 70%;
+      margin-top: 2px;
+    }
+  }

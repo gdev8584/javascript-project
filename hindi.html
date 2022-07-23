@@ -6,102 +6,228 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <title>Netflix India - Created by Devanand</title>
 </head>
 <body>
+      <!-- first page start.................................................. -->
     <section class="header">
         <div class="logo">
-            <div><img src="./asserts/netflix-logo-png-2562.png"></div>
+            <div class="netflix"><img src="./asserts/netflix-logo-png-2562.png"></div>
             <div class="btn1">
-                <i class="fa-solid fa-globe"></i> 
-                <select id="English">
-                    <option value="english">English</option>
-                </select>
+                    <i class="fa-solid fa-globe"></i>
+                    <select id="English" size="1" onchange="window.location.href=this.value;">
+                    <option value="./hindi.html">हिन्दी</option>
+                    <option value="./index.html">English</option>
+                    </select>
             </div>
-            <div class="btn"><a href="#">Sign In</a></div>
+            <div class="btn"><a href="#">साइन इन</a></div>
         </div>
         <div class="para">
             <h1>अनलिमिटेड फ़िल्में, टीवी शो<br> और बहुत कुछ.</h1>
             <p class="p1">जहां चाहें देखें. जब चाहें कैंसल करें.</p>
-            <p class="p2">देखने के लिए तैयार हैं? अपनी मेंबरशिप बनाने या रीस्टार्ट करने के
-                लिए अपना ईमेल एड्रेस डालें.</p>
+            <p class="p2">देखने के लिए तैयार हैं? अपनी मेंबरशिप बनाने या रीस्टार्ट करने के लिए अपना ईमेल एड्रेस डालें.</p>
             <div class="int1">
-            <input type="email" placeholder="ईमेल एड्रेस">
-            <a href="#">Get Started ></a>
+                <div class="input-wrap">
+                    <input type="email" class="input" required>
+                    <label for="">
+                        ईमेल एड्रेस
+                    </label>
+                </div>
+                <a href="#">शुरू करें ></a>
             </div>
         </div>
     </section>
+   <!-- .................................................end first page.............................................................. -->
     <hr>
     <section class="enjoy">
         <div class="tv1">
-            <div>
-            <h1>Enjoy on your TV.</h1>
-            <p>Watch on smart TVs, PlayStion, Xbox, Chromecast, Apple TV, Blu-ray
-                players and more.
-            </p>
-            </div>
-            <div class="tv2">
-            <img src="./asserts/tv.png" alt="Netflix Tv">
-            <video autoplay muted loop width="465px"> <source src="./asserts/Video in TV"></video>
-            </div>
+            <div><h1>अपनी टीवी पर मज़ा लें.</h1></div>
+            <div class="px1"><p>स्मार्ट टीवी, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray प्लेयर के साथ ही दूसरे डिवाइस पर भी देखें.</p></div>
+        </div>
+        <div class="tv2">
+            <div><video autoplay muted loop width="465px"> <source src="./asserts/Video in TV"></video></div>
+            <div><img src="./asserts/tv.png" alt="Netflix Tv"></div>      
         </div>
     </section>
+    <!-- .................................................end second page.............................................................. -->
     <hr>
     <section class="mobile">
         <div class="mb1">
-            <div>
-            <h1>Download your shows to watch offline.</h1>
-            <p>Save your favourites easily and 
-                always have something to watch.
+            <h1>ऑफ़लाइन देखने के लिए अपने शो डाउनलोड करें.</h1>
+            <p>अपने पसंदीदा शो और फ़िल्में सेव करें, ताकि आप कभी भी इन्हें देख सकें.
             </p>
-            </div>
-            <div class="mb2">
-                <img class="mb" src="./asserts/Mobile Phone.jpeg" alt="mobile">
-                <div class="x">
-                    <div><img class="i1" src="./asserts/Stranger things icon.png" alt="stranger">
-                    <p><b>Stranger Things</b><span>Downloading...</span></p></div>
-                    <img class="i2" src="./asserts/Downloading animation.gif">
-                </div>
+        </div>
+        <div class="mb2">
+            <div class="mb"><img  src="./asserts/Mobile Phone.jpeg" alt="mobile"></div>
+            <div class="x">
+                <div class="i1"><img  src="./asserts/Stranger things icon.png" alt="stranger"></div>
+                <p class="i"><b>Stranger Things</b><span>डाउनलोड हो रहा है...</span></p>
+                <div class="i2" ><img src="./asserts/Downloading animation.gif"></div>
             </div>
         </div>
     </section>
+    <!-- .................................................end third page.............................................................. -->
     <hr>
     <section class="menjoy">
         <div class="mtv1">
-            <div>
-            <h1>Watch everywhere.</h1>
-            <p>Stream unlimited movies 
-                and TV shows on your phone, tablet, laptop, and TV.
+            <h1>हर जगह देखें.</h1>
+            <p>बिना ज़्यादा पेमेंट किए, अपने फ़ोन, टैबलेट, लैपटॉप और टीवी पर अनलिमिटेड फ़िल्में और टीवी शो स्ट्रीम करें.
             </p>
             </div>
             <div class="mtv2">
-            <img src="./asserts/Monitor.png" alt="Netflix Moniter">
+            <img src="./asserts/Monitor.png" alt="Netflix Moniter"> 
             <video autoplay muted loop width="455px" > <source src="./asserts/video in monitor"></video>
             </div>
-        </div>
     </section>
+    <!-- .................................................end four page.............................................................. -->
     <hr>
     <section class="cmobile">
         <div class="cmb1">
-            <div>
-            <h1>Create profiles for children.</h1>
-            <p>Send children on adventures with their favourite 
-                characters in a space made just for them—free with your
-                 membership.
+            <h1>बच्चों के लिए प्रोफ़ाइल बनाएं.</h1>
+            <p>बच्चों को जाने दें अपने पसंदीदा किरदारों के साथ उस रोमांचक सफ़र पर जो सिर्फ़ उनके लिए ही है - आपकी मेंबरशिप के साथ फ़्री.
             </p>
             </div>
             <div class="cmb2">
-                <img class="cmb" src="./asserts/Children.png" alt="mobile">
+                <div class="cmb"><img src="./asserts/Children.png" alt="mobile"></div>
             </div>
-        </div>
     </section>
+    <!-- .................................................end five page.............................................................. -->
     <hr>
-    <section class="menjoy">
-        <div class="mtv1">
-            <div>
-            <h1>Frequently Asked Questions</h1>
+<!-- Accordion menu in html css page for use in FAQ -->
+    <section class="faq">
+        <div class="faq1">
+            <h1>अक्सर पूछे जाने वाले सवाल</h>
+        </div>
+        <div class="container">
+            <div class="accordian">
+                <div class="accordian-item" id="ques1">
+                    <a class="accordian-link" href="#ques1">
+                        Netflix क्या है?
+                        <i  class="fa-solid fa-plus"></i>
+                        <i  class="fa-solid fa-xmark"></i>
+                    </a>
+                    <div class="ans">
+                        <p>Netflix एक स्ट्रीमिंग सर्विस है जिसके ज़रिए आप हज़ारों इंटरनेट-कनेक्टेड डिवाइस पर तरह-तरह के अवॉर्ड विजेता टीवी शो, फ़िल्में, ऐनिमे, डॉक्यूमेंट्रीज़ का लुत्फ़ उठा सकते हैं.
+                        <br><br>
+                        आप जब चाहें, जितना चाहें, बिना किसी विज्ञापन के देख सकते हैं – सारा कॉन्टेंट बहुत कम मासिक शुल्क पर. खोजने के लिए हमेशा कुछ नया होता है और हर हफ़्ते नए टीवी शो और फ़िल्में जोड़ी जाती हैं!</p>
+                    </div>
+                </div>
+                <div class="accordian-item" id="ques2">
+                    <a class="accordian-link" href="#ques2">
+                        Netflix की कीमत कितनी है?
+                        <i  class="fa-solid fa-plus"></i>
+                        <i  class="fa-solid fa-xmark"></i>
+                    </a>
+                    <div class="ans">
+                        <p>हर महीने की तय फ़ी देकर अपने स्मार्टफ़ोन, टैबलेट, स्मार्ट टीवी, लैपटॉप, या स्ट्रीमिंग डिवाइस पर Netflix देखें. हर महीने ₹149 से ₹649 तक के प्लान. कोई एक्सट्रा कीमत या कॉन्ट्रैक्ट नहीं.</p>
+                    </div>
+                </div>
+                <div class="accordian-item" id="ques3">
+                    <a class="accordian-link" href="#ques3">
+                        मैं कहां देख सकता हूं?
+                        <i  class="fa-solid fa-plus"></i>
+                        <i  class="fa-solid fa-xmark"></i>
+                    </a>
+                    <div class="ans">
+                        <p>कहीं भी, कभी भी देखें अपने पर्सनल कंप्यूटर से या स्मार्ट टीवी, स्मार्टफ़ोन, टैबलेट, स्ट्रीमिंग मीडिया प्लेयर और गेम कंसोल सहित Netflix ऐप ऑफ़र करने वाले किसी भी इंटरनेट-कनेक्टेड डिवाइस पर तुरंत देखने के लिए, वेब पर netflix.com पर अपने Netflix अकाउंट में साइन इन करें.
+                        <br><br>
+                        आप iOS, Android या Windows 10 ऐप से भी अपने पसंदीदा शो डाउनलोड कर सकते हैं. चलते-फिरते और बिना इंटरनेट कनेक्शन के देखने के लिए डाउनलोड का उपयोग करें. Netflix को अपने साथ कहीं भी ले जाएं.</p>
+                    </div>
+                </div>
+                <div class="accordian-item" id="ques4">
+                    <a class="accordian-link" href="#ques4">
+                        मैं कैसे कैंसल करूं?
+                        <i  class="fa-solid fa-plus"></i>
+                        <i  class="fa-solid fa-xmark"></i>
+                    </a>
+                    <div class="ans">
+                        <p>Netflix लचीला है. कोई परेशान करने वाले कॉन्ट्रैक्ट नहीं और कोई बंधन नहीं हैं. आप आसानी से दो क्लिक में अपना अकाउंट ऑनलाइन कैंसल कर सकते हैं. कोई कैंसलेशन फ़ीस नहीं है – अपना अकाउंट कभी भी शुरू या बंद करें.</p>
+                    </div>
+                </div>
+                <div class="accordian-item" id="ques5">
+                    <a class="accordian-link" href="#ques5">
+                        मैं Netflix पर क्या देख सकता/सकती हूं?
+                        <i  class="fa-solid fa-plus"></i>
+                        <i  class="fa-solid fa-xmark"></i>
+                    </a>
+                    <div class="ans">
+                        <p>Netflix की बहुत बड़ी लाइब्रेरी में फ़ीचर फ़िल्मों, डॉक्यूमेंट्री, टीवी शो, ऐनिमे, अवॉर्ड-विनिंग Netflix ओरिजिनल्स के अलावा और भी बहुत कुछ है. आप जितना चाहें, कभी भी देखें.</p>
+                    </div>
+                </div>
+                <div class="accordian-item" id="ques6">
+                    <a class="accordian-link" href="#ques6">
+                        क्या Netflix बच्चों के लिए ठीक है?
+                        <i  class="fa-solid fa-plus"></i>
+                        <i  class="fa-solid fa-xmark"></i>
+                    </a>
+                    <div class="ans">
+                        <p>आपकी मेंबरशिप में Netflix किड्स एक्सपीरियंस शामिल है. बच्चे अपनी तरह से पारिवारिक टीवी शो और फ़िल्मों का आनंद लेते हैं, लेकिन आप उनके द्वारा देखे जाने वाले कॉन्टेंट को कंट्रोल कर सकते हैं.
+                        <br><br>
+                        बच्चों की प्रोफ़ाइल में PIN से सुरक्षित पैरेंटल कंट्रोल्स होते हैं जिससे आप बच्चों को मेच्योरिटी रेटिंग वाले कॉन्टेंट देखने से रोक सकते हैं और उन टाइटल को ब्लॉक कर सकते हैं जिन्हें आप नहीं चाहते हैं कि बच्चे देखें.</p>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="para1">
+            <p class="p2">देखने के लिए तैयार हैं? अपनी मेंबरशिप बनाने या रीस्टार्ट करने के लिए अपना ईमेल एड्रेस डालें.</p>
+                <div class="int1">
+                    <div class="input-wrap1">
+                        <input type="email" class="input1" required>
+                        <label for="">
+                            ईमेल एड्रेस
+                        </label>
+                    </div>
+                <a href="#">शुरू करें ></a>
+                </div>
+        </div>
     </section>
+    <!-- .................................................end six page.............................................................. -->
+    <hr>
+    <section class="footer">
+        <div class="ques">कोई सवाल है? 000-800-040-1843 पर कॉल करें</div>
+        <div class="list">
+            <div class="left">
+                <ul>
+                    <li><a href="#" >FAQ</a></li>
+                    <li><a href="#" >मीडिया केंद्र</a></li>
+                    <li><a href="#" >देखने के तरीके</a></li>
+                    <li><a href="#" >कुकी प्रेफ़रेंस</a></li>
+                </ul>
+            </div>
+            <div class="mid-left">
+                <ul>
+                    <li><a href="#" >सहायता केंद्र</a></li>
+                    <li><a href="#" >नौकरियां</a></li>
+                    <li><a href="#" >स्पीड टेस्ट</a></li>
+                    <li><a href="#" >कानूनी सूचनाएं</a></li>
+                </ul>
+            </div>
+            <div class="mid-right">
+                <ul>
+                    <li><a href="#" >अकाउंट</a></li>
+                    <li><a href="#" >इंवेस्टर संबंध</a></li>
+                    <li><a href="#" >प्रायवेसी</a></li>
+                    <li><a href="#" >सिर्फ़ Netflix पर</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#" >कॉरपोरेट जानकारी</a></li>
+                    <li><a href="#" >उपयोग की शर्तें</a></li>
+                    <li><a href="#" >हमसे संपर्क करें</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="btn2">
+            <i class="fa-solid fa-globe"></i>
+            <select id="English1" size="1" onchange="window.location.href=this.value;">
+            <option value="./hindi.html">हिन्दी</option>
+            <option value="./index.html">English</option>
+            </select>
+            <p>Netflix भारत</p>
+        </div>
+    </section>
+    <!-- .................................................end seven page.............................................................. -->
 </body>
 </html>

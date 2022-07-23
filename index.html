@@ -13,18 +13,15 @@
       <!-- first page start.................................................. -->
     <section class="header">
         <div class="logo">
-            <div><img src="./asserts/netflix-logo-png-2562.png"></div>
+            <div class="netflix"><img src="./asserts/netflix-logo-png-2562.png"></div>
             <div class="btn1">
-                <ul>
-                    <li class="glb"><i class="fa-solid fa-globe"></i>
-                        <select id="English">
-                        <option value="english">English</option>
-                    <!-- <option value="english">हिन्दी</option> -->
-                        </select>
-                    </li>
-                    <li><div class="btn"><a href="#">Sign In</a></div></li>
-                </ul>
+                    <i class="fa-solid fa-globe"></i>
+                    <select id="English" size="1" onchange="window.location.href=this.value;">
+                    <option value="./index.html">English</option>
+                    <option value="./hindi.html">हिन्दी</option>
+                    </select>
             </div>
+            <div class="btn"><a href="./signup-in/login.html">Sign In</a></div>
         </div>
         <div class="para">
             <h1>Unlimited movies, TV<br> shows and more.</h1>
@@ -232,16 +229,16 @@
                     <li><a href="#" >Media Centre</a></li>
                     <li><a href="#" >Terms of Use</a></li>
                     <li><a href="#" >Contact Us</a></li>
-                    <li></li>
                 </ul>
             </div>
         </div>
         <div class="btn2">
             <i class="fa-solid fa-globe"></i>
-            <select id="English1">
-                <option value="english">English</option>
-                <!-- <option value="english">हिन्दी</option> -->
+            <select id="English1" size="1" onchange="window.location.href=this.value;">
+            <option value="./index.html">English</option>
+            <option value="./hindi.html">हिन्दी</option>
             </select>
+            <p>Netflix India</p>
         </div>
     </section>
     <!-- .................................................end seven page.............................................................. -->
