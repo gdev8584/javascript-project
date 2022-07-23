@@ -8,6 +8,12 @@ html {
     font-size: 10px;
     font-family: 'Montserrat',sans-serif;
 }
+body {
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .icon-bar {
     width: 100%;
     height: auto;
@@ -27,7 +33,7 @@ html {
   }
   .icon-bar a:nth-child(1){
     float: left;
-    width: 30%;
+    width: 40%;
     text-align: center;
     padding: 12px 0;
     transition: all 0.3s ease;
@@ -59,7 +65,7 @@ html {
     width: 100%;
     top: 0;
     background-color: black;
-    opacity: 0.4;
+    opacity: 0.1;
     z-index: -1;
 }
 span {
@@ -88,9 +94,17 @@ nav {
     transform: translateY(-50%)
 }
 h1{
-    color: white;
+    color: rgb(9, 248, 25);
     margin: 20px 0px 20px;
     font-size: 75px;
+    animation: bg-color 5s infinite;
+}
+@keyframes bg-color{
+    0% {color: blueviolet;}
+    25% {bcolor: skyblue;}
+    50% {color: rgb(55, 145, 170);}
+    75% {bcolor: rgb(14, 197, 136);}
+    100% {color: rgb(115, 232, 25);}
 }
 h3{
     color: white;
@@ -110,9 +124,10 @@ h4 {
 }
 #about img {
     height: auto;
-    max-width: 40%;
+    max-width: 30%;
     border-radius: 10%;
     margin: 20px;
+    box-shadow: -20px -20px 0 0 rgb(49, 45, 45);
 }
 .about-text {
     width: 550px;
@@ -145,45 +160,102 @@ h4 {
     line-height: 28px;
     margin-bottom: 45px;
 }
-button a {
+#about .fa {
+    color: white;
+    font-size: 14px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-color: rgb(49, 53, 54);
+    padding: 15px 18px; /* use for create buttom size */
+}
+#about .fa:hover{
+    color: rgb(14, 91, 234);
+    background-color: white;
+}
+.buttonX {
     background-color: crimson;
+    font-size: 14px;
     color: white;
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
-    padding: 10px 25px;
-    border-radius: 30px;
+    padding: 16px 18px;
+    border-radius: 10px;
     transition: transform .4s;
 }
-button a:hover {
+.buttonX:hover {
     background-color: antiquewhite;
     color: crimson;
     transform: scale(1.1);
 }
 #contact-me {
     width: 100%;
-    height: 190px;
+    height: 100vh;
     background: #000;
     display: flex;
+    padding: 20px;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
 }
-#contact-me p{
-    color: #fff;
-    font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 25px;
-    letter-spacing: 1px;
+#contact-me h2{
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+}
+#contact-me form {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1f2322;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: white;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034)
+}
+input {
+    width: 100%;
+    margin-left: auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+.name{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+.email {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+textarea {
+    width: 100%;
+    margin-left: auto;
+    padding: 5px;
+    border-radius: 5px;
+    resize: vertical;
+}
+.query {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
 }
 .button-two {
     background-color: crimson;
     color: white;
+    font-size: 12px;
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
-    padding: 5px 15px;
-    border-radius: 20px;
+    padding: 9px 18px;
+    border-radius: 10px;
     transition: transform .4s;
 }
 .button-two:hover {
@@ -212,7 +284,7 @@ button a:hover {
     min-height:400px;
 }
 .card:nth-child(1) {
-    background-color: #191919;
+    background:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0,0,0,0.8)),url(./assert/Background.jpeg);
     border-radius: 20px;
     padding: 20px 35px;
     height: 365px;
@@ -288,7 +360,7 @@ footer {
     background-color: #101010;
     position: relative;
     width: 100%;
-    height: 40px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -298,9 +370,10 @@ footer {
     display: flex;
 }
 .social a {
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
     display: flex;
+    font-size: 25px;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
@@ -308,4 +381,8 @@ footer {
     text-decoration: none;
     color: white;
     
+}
+.copy {
+    color: white;
+    transform: translate(122%,-250%);
 }

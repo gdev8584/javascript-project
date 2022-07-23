@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <!--For icons styleSheet-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./assert/icon.png">
     <title>My Portfolio</title>
 </head>
 <body>
@@ -47,7 +48,8 @@
                 Learning new things excite me and become comfortable 
                 with it in short span of time. A fast learner with
                 creative mind, looking for a good opportunities.</p>
-                <button type="button"><a href="./assert/DEVANAND_GIRI_(RESUME2022).pdf">Download CV</a></button>
+                <a  class="buttonX" href="./assert/DEVANAND_GIRI_(RESUME2022).pdf">Download CV</a>
+                <a href="http://www.linkedin.com/in/devanand-giri-90110b56/" class="fa fa-linkedin" target="_blank"></a>
             </div>
         </div>
     </section>
@@ -59,6 +61,19 @@
         </div>
         <div class="box">
             <div class="card">
+                <i class="fa fa-bars" style="font-size:15px;color:crimson;"></i>
+                <h5>Netflix Clone</h5>
+                <div class="pra">
+                    <p>Clone Netflix website using HTML & CSS, Try to built 
+                        website, which needs to work across all device. secondly,
+                        learn how frontend Developer design.
+                    </p>
+                    <p style="text-align: center;">
+                        <a class="button" href="https://devanand-netflix.netlify.app/">view</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
                 <i class="fa fa-bars" style="font-size:15px;color:crimson;" ></i>
                 <h5>Web Development</h5>
                 <div class="pra">
@@ -67,20 +82,8 @@
                     it needs  to be fast as possible.
                     </p>
                     <p style="text-align: center;">
-                        <a class="button" href="https://majestic-mochi-57be2a.netlify.app/" 
+                        <a class="button" href="https://d-photography.netlify.app/" 
                         target="_blank">View</a>
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <i class="fa fa-bars" style="font-size:15px;color:crimson;"></i>
-                <h5>Web Development</h5>
-                <div class="pra">
-                    <p>Upcoming project on Portfolio in which design the Responsive Resume 
-                        using CSS Grid is going on and published soon as possible.
-                    </p>
-                    <p style="text-align: center;">
-                        <a class="button" href="#">upcoming</a>
                     </p>
                 </div>
             </div>
@@ -92,13 +95,34 @@
     <hr>
     <!--Contact section start-->
     <div id="contact-me">
-        <p> Contact me if you need any help for design a website</p>
-        <a class="button-two" href="mailto:g.dev9716@gmail.com">Contect Me</a>
+        <div>
+        <h2>Contact me</h2>
+        <form action="get">
+            <div class="name">
+            <label for="name">Name<sup>*</sup>:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name" required><br>
+            </div>
+            <div class="email">
+                <label for="email">Email<sup>*</sup>:</label>
+                <input type="email" id="email" name="email" placeholder="Required" required><br>
+            </div>
+            <div class="email">
+                <label for="number">Mobile:</label>
+                <input type="number" id="number" name="number" placeholder="Only Number"><br>
+            </div>
+            <div class="query">
+            <label for="describe">Query<sup>*</sup>:</label>
+            <textarea name="describe" id="describe" cols="50" rows="3" placeholder="Not more than 50 words"></textarea><br>
+             </div><br><br>
+        <a class="button-two" href="mailto:g.dev9716@gmail.com">Submit</a>
+        </form>
+    </div>
     </div>
     <footer id="s" class="social">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-instagram"></a>
-        <a href="#" class="fa fa-twitter"></a>
+        <p class="copy">copywright @ Devanad Giri</p>
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
     </footer>
 </body>
 </html>
