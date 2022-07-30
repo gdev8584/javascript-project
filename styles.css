@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("https://images.wallpaperscraft.com/image/single/boat_mountains_lake_135258_1920x1080.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+h2{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    text-align: center;
+    color: cornsilk;
+    animation: bg-color 5s infinite;
+}
+@keyframes bg-color {
+    0%{ color: aqua;}
+    25%{color:aquamarine;
+    text-decoration: underline;}
+    50%{ color: rgba(246, 7, 170, 0.936);}
+    75%{  color:aliceblue;}
+    100% {color: rgb(225, 109, 109);}
+
+}
+.clock {
+    display: flex;
+}
+.clock div{
+    margin: 5px;
+    position: relative;
+}
+.clock span {
+    width: 100px;
+    height: 80px;
+    background-color: slateblue;
+    opacity: 0.8;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.clock .text {
+    height: 30px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: blue;
+    opacity: 0.8;
+}
+ .clock #ampm {
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    background-color: green;
+    opacity: 0.8;
+ }
