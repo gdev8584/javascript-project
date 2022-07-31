@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css">
     <title>Calculator</title>
 </head>
 <body>
     <section class="calculator">
-        <div class="Heading"><h2>CALCULATOR</h2></div>
-        <div id="input"></div>
+        <div class="heading"><h2>CALCULATOR</h2></div>
+        <div class="row">
+            <div><input id="input" type="text" placeholder="0" disabled></div>
+        </div>
         <div class="container">
             <div class="row">
                 <button id="clr">AC</button>
-                <button id="plus-minus">+/-</button>
+                <button id="back-space">DEL</sup></button>
                 <button id="mod">%</button>
                 <button id="divide">/</button>
             </div>
@@ -22,7 +24,7 @@
                 <button id="block7">7</button>
                 <button id="block8">8</button>
                 <button id="block9">9</button>
-                <button id="multiply">x</button>
+                <button id="multiply">*</button>
             </div>
             <div class="row">
                 <button id="block4">4</button>
@@ -44,5 +46,6 @@
             </div>
         </div>     
     </section>
+    <script src="./index.js"></script>
 </body>
 </html>

@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    margin: 50px;
+    text-align: center;
+    height: 480px;
+    width: 300px;
+    animation: bg-color 5s infinite;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px;
+    border: 3px solid white;
+}
+@keyframes bg-color {
+    0% {background-color: blue;}
+    25% {background-color: blueviolet;}
+    50% {background-color: rgb(224, 30, 63);}
+    75%{ background-color: orangered;}
+    100%{ background-color: red;}
+}
+.heading {
+    color: white;
+    font-size: larger;
+    margin: 10px;
+}
+.container{
+    border-radius: 10px;
+    background-color: yellow;
+    animation: c-color 5s infinite;
+    margin-top: 0px;
+}
+@keyframes c-color {
+    0% {background: linear-gradient(30deg, red,orange,orangered);}
+    25% {background: linear-gradient(60deg, orangered,pink,red);}
+    50% {background: linear-gradient(90deg,orange,orangered,red);}
+    75% {background: linear-gradient(120deg, red,blueviolet,orangered);}
+    100% {background: linear-gradient(150deg, red,orange,orangered);}
+}
+.row {
+    font-size: 40px;
+    text-align: center;
+}
+#input {
+    width: 280px;
+    height: 60px;
+    margin-top: 30px;
+    box-shadow: 0px 1px 10px;
+    border-radius: 9px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    background-color: aliceblue;
+    text-align: end;
+    padding-right: 10px;
+}
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 80%;
+    margin: 2px;
+    cursor: pointer;
+    box-shadow: 0px 1px 10px;
+    border-radius: 9px;
+}
+button:hover {
+    background-color: aquamarine;
+    font-size: 90%;
+}
+#ans {
+    width: 130px
+}
+#back-space {
+    font-size: 70%;
+}
+#back-space:hover {
+    font-size: 75%;
+}
