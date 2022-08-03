@@ -92,7 +92,7 @@ nav {
     width: 80%;
     top: 50%;
     left: 8%;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
 }
 h1{
     color: rgb(9, 248, 25);
@@ -102,9 +102,9 @@ h1{
 }
 @keyframes bg-color{
     0% {color: blueviolet;}
-    25% {bcolor: skyblue;}
+    25% {color: skyblue;}
     50% {color: rgb(55, 145, 170);}
-    75% {bcolor: rgb(14, 197, 136);}
+    75% {color: rgb(14, 197, 136);}
     100% {color: rgb(115, 232, 25);}
 }
 h3{
@@ -290,7 +290,7 @@ textarea {
 .card:nth-child(1) {
     background:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0,0,0,0.8)),url(./assert/Background.jpeg);
     border-radius: 20px;
-    padding: 20px 35px;
+    padding: 20px 25px;
     height: 365px;
     width: 335px;
     margin: 15px;
@@ -300,7 +300,7 @@ textarea {
 .card:nth-child(2) {
     background-color: #191919;
     border-radius: 20px;
-    padding: 20px 35px;
+    padding: 20px 30px;
     height: 365px;
     width: 335px;
     margin: 15px;
@@ -364,13 +364,10 @@ footer {
     background-color: #101010;
     width: 100%;
     height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+   
 }
 .social {
-    margin: auto;
+    display: block;
 }
 .social a {
     width: 25px;
@@ -379,14 +376,18 @@ footer {
     border-radius: 50%;
     text-decoration: none;
     color: white;
-    
+}
+.xi {
+    display: flex;
+    justify-content: center;
 }
 .copy {
     color: white;
-    transform: translate(105%,-230%);
+    text-align: center;
+    
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 834px) {
     .main {
         width: 50%;
         max-width: 90%;
@@ -472,7 +473,139 @@ footer {
         justify-content: center;
         align-items: center;
         min-height:400px;
-        margin-left: 10%;
     }
+    #service {
+        background-color: #000;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        padding: 100px 10px;
+        position: relative;
+    }
+    .title h2{
+        color: white;
+        text-align: center;
+        padding: 35px;
+        font-size: 45px;
+    }
+    
+    .card:nth-child(1) {
+        background:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0,0,0,0.8)),url(./assert/Background.jpeg);
+        border-radius: 20px;
+        padding: 20px 35px;
+        height: 365px;
+        width: 300px;
+        margin: 15px;
+        overflow: hidden;
+        text-align: center;
+    }
+    .card:nth-child(2) {
+        background-color: #191919;
+        border-radius: 20px;
+        padding: 20px 35px;
+        height: 365px;
+        width: 300px;
+        margin: 15px;
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+    }
+    .card:nth-child(3) {
+        background-color: #191919;
+        background-size: cover;
+        border-radius: 20px;
+        padding: 20px 35px;
+        height: 365px;
+        width: 300px;
+        margin: 15px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+    .fa {
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+    }
+    .card h5{
+        color: antiquewhite;
+        font-size: 20px;
+        margin-bottom: 15px;
+        justify-content: center;
+        text-align: center;
+    }
+    .pra p{
+        color: lightpink;
+        font-size: 15px;
+        line-height: 20pt;
+        list-style-position: inside;
+        margin-bottom: 25px;
+    }
+    .card {
+            width: 100%;
+            padding: 100px 0px;
+            background-color: black;
+            background-size: auto;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            transform: translateX(-50%);
+    }
+    .card .button {
+        background-color: crimson;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: normal;
+        padding: 9px 18px;
+        border-radius: 20px;
+        transition: transform .4s;
+    }
+    .card .button:hover {
+        background-color: antiquewhite;
+        color: crimson;
+        transform: scale(1.1);
+    }
+
+    /*page 1 */
+    .content {
+        position: relative;
+        width: 80%;
+        top: 50%;
+        left: 8%;
+        transform: translateY(-50%);
+    }
+    h1{
+        color: rgb(9, 248, 25);
+        margin: 20px 0px 20px;
+        font-size: 55px;
+        animation: bg-color 5s infinite;
+    }
+    @keyframes bg-color{
+        0% {color: blueviolet;}
+        25% {color: skyblue;}
+        50% {color: rgb(55, 145, 170);}
+        75% {color: rgb(14, 197, 136);}
+        100% {color: rgb(115, 232, 25);}
+    }
+    h3{
+        color: white;
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+    h4 {
+        color: blanchedalmond;
+        letter-spacing: 2px;
+        font-size: 25px;
+    }
+    .logo {
+        position: relative;
+        color: #fff;
+        font-size: 25px;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+    
+      
 
 }
