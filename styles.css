@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.plate{
+    width: 300px;
+    height: 10px;
+    background-color: turquoise;
+    border-radius: 20px;
+    border: 2px solid white;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,50vh);
+}
+.cake {
+    width: 240px;
+    height: 140px;
+    border-radius: 2px;
+    background: linear-gradient(white,brown,rgb(183, 52, 52),rgb(45, 15, 20));
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-140px);
+}
+.candle {
+    width: 20px;
+    height: 150px;
+    background: linear-gradient(rgb(248, 248, 114),pink);
+    border-radius: 40%;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,18vh);
+    z-index: -1;
+}
+.light {
+    width: 20px;
+    height: 30px;
+    background: radial-gradient(rgb(23, 75, 233),rgb(241, 84, 17),rgb(231, 231, 4),rgb(252, 7, 48));
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-20px);
+}
+button {
+    width: 300px;
+    height: 50px;
+    background-color: rgb(23, 227, 4);
+    border-radius: 20px;
+    border: 2px solid white;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,55vh);
+    cursor: pointer;
+}
