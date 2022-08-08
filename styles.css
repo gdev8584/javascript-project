@@ -815,6 +815,7 @@ hr {
         justify-content: space-between;
         padding: 14px 20px;
         margin-bottom: 1px;
+        cursor: pointer;
         /* margin: 5px 20px 1px 20px; */
     }
     .accordian-link .fa-xmark {
@@ -834,13 +835,13 @@ hr {
     .ans p {  
         padding: 20px;
     }
-    .accordian-item:target .ans {
+    .accordian-item.active .ans {
         max-height: 50%;
     }
-    .accordian-item:target .accordian-link .fa-plus {
+    .accordian-item.active .accordian-link .fa-plus {
         display: none;
     }
-    .accordian-item:target .accordian-link .fa-xmark {
+    .accordian-item.active .accordian-link .fa-xmark {
         display: block;
     }
     .para1 {
