@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    background-color: aquamarine;
+    width: 100%;
+    height: 100vh;
+}
+.container {
+    background-color: blue;
+    width: 30rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 10px;
+    padding: 2rem;
+}
+.container h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 1rem;
+    color: yellowgreen;
+}
+.form {
+    position: relative;
+    height: 4rem;
+}
+.form small{
+    position: absolute;
+    padding: 10px;
+    font-size: 12px;
+    left: 0;
+    visibility: hidden;
+}
+.form.error small{
+    visibility:visible;
+    color: red;
+}
+
+
+.form .fname {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3rem;
+    border: 3px solid gray;
+    border-radius: 5px;
+    padding-left: 1rem;
+    font-size: 16px;
+    outline: none;
+    }
+    .form.success .fname{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3rem;
+    border: 3px solid green;
+    border-radius: 5px;
+    padding-left: 1rem;
+    font-size: 16px;
+    outline: none;
+    }
+    .form.error .fname{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3rem;
+    border: 3px solid red;
+    border-radius: 5px;
+    padding-left: 1rem;
+    font-size: 16px;
+    outline: none;
+    }
+
+.form .fname:hover{
+    border: 3px solid red;
+}
+.form .fname:focus{
+    border: 3px solid rgb(16, 225, 173);
+}
+.form .flabel {
+    position: absolute;
+    left: 1rem;
+    top: 0.8rem;
+    font-size: 18px;
+    color: red;
+    cursor: text;
+    transition: top 200ms ease-in,
+    left 200ms ease-in,
+    font-size 200ms ease-in;
+}
+.fname:focus ~ .flabel,
+ .fname:not(:placeholder-shown).fname:not(:focus) ~ .flabel {
+    top: 0.1rem;
+    left: 0.3rem;
+    font-size: 10px;
+}
+.form .btn {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 3rem;
+        border-radius: 5px;
+        padding-left: 1rem;
+        font-size: 16px;
+        outline: none;
+        background-color: orangered;
+        color: beige;
+        font-size: larger;
+}
