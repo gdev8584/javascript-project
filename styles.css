@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(rgb(213, 117, 15),rgb(225, 226, 225),rgb(216, 216, 216),green);
+    width: 100%;
+    height: 100vh;
+}
+*.hide {
+    display: none !important;
+}
+.container1 {
+    position: relative;
+    display: inline-block;
+    padding: 32px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(45deg, transparent 50% rgba(255,255,255,0.08));
+    background-color: rgb(47, 14, 79);
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: 0 0 20px rgb(229, 102, 104);
+} 
+.box .net {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    height: 10%;
+    left: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: rgb(227, 25, 99);
+    box-shadow: 0 0 80px rgb(17, 16, 16);
+    transition: all 0.5s ease;
+}
+.box .net:hover{
+    background-color: aquamarine;
+    color: red;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 900;
+}
+.fas {
+    color: aliceblue;
+    font-size: 0.8rem;
+}
+.box .quote {
+    color: aliceblue;
+    line-height: 1.5;
+    font-size: 1.3rem;
+}
+.author {
+    padding-top: 0.8rem;
+    position: absolute;
+    right: 10%;
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+    padding: 32px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(45deg, transparent 50% rgba(255,255,255,0.08));
+    background-color: rgb(47, 14, 79);
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: 0 0 20px rgb(229, 102, 104);
+} 
+.box {
+    width: 360px;
+    height: 420px;
+}
+.box h1{
+    color: whitesmoke;
+}
+#circle {
+   display: inline-block;
+   height: 260px;
+   width: 260px;
+   border-radius: 50%;
+   background: conic-gradient(rgba(7, 250, 32, 0.3) 0%, transparent 65%);
+   animation:  radarRotate 2s linear infinite;
+}
+#circle:before {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: calc(50% - 10px);
+    border: 10px solid transparent;
+    border-top: 130px solid rgb(111, 255, 0);
+    filter: drop-shadow(0 0 12px rgb(51, 255, 0));
+   
+}
+@keyframes radarRotate {
+    100% {transform: rotate(-360deg);}
+}
+.circle-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+button {
+    position: relative;
+   height: 260px;
+   width: 260px;
+   border-radius: 50%;
+   font-size: 20px;
+   line-height: 1.5;
+   font-weight: bold;
+   cursor: pointer;
+   background-color: rgb(47, 14, 79);
+   color: white;
+   border: 0;
+   box-shadow: 0 0 12px  rgb(111, 255, 0);
+}
+button:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -2px;
+    left: -2px;
+    border: 2px solid rgb(111, 255, 0);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 12px rgb(51, 255, 0));
+    animation: btnFlow 2s linear infinite;
+}
+
+@keyframes btnFlow {
+    60%, 100% {
+        height: calc(100% + 32px);
+        width: calc(100% + 32px);
+        top: -16px;
+        left: -16px;
+        opacity: 0;
+    }
+}
+button:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -2px;
+    left: -2px;
+    border: 2px solid rgb(111, 255, 0);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 12px rgb(51, 255, 0));
+    animation: btnFlow 2s linear;
+}
+
+.content {
+    color: aliceblue;
+    padding: 10px;
+    font-size: 3rem;
+}
+.qnet {
+    position: absolute;
+    bottom: 5%;
+    right: 0%;
+    width: 4rem;
+    height: 2rem;
+    border-radius: 0 8px ;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 20px black;
+    cursor: pointer;
+    background-color: greenyellow;
+    font-size: larger;
+    color: blue;
+    transition: all 0.5s ease;
+}
+.box .qnet:hover{
+    background-color: rgb(191, 209, 53);
+    color: rgb(138, 11, 249);
+    font-size: 1rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.next {
+    position: absolute;
+    bottom: 15%;
+    right: 0%;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 20px black;
+    cursor: pointer;
+    background-color: rgb(25, 49, 199);
+    font-size: 1rem;
+    color: whitesmoke;
+    transition: all 0.5s ease;
+}
+.box .next:hover{
+    background-color: rgb(191, 209, 53);
+    color: rgb(138, 11, 249);
+    font-size: 1rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 800px) {
+    .container1{
+        width: 80%;
+        border-radius: 20px 0;
+    }
+    .box {
+        width: 100%;
+    }
+    .container {
+        width: 80%;
+    }
+  }
