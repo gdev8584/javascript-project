@@ -1,5 +1,5 @@
 function randomQ(){
-fetch('http://api.quotable.io/random').then((avdata)=>{
+fetch('https://api.quotable.io/random').then((avdata)=>{
     return avdata.json()
 }).then((curdata)=>{
     document.querySelector('.quote').innerHTML= curdata.content;
