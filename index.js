@@ -10,7 +10,7 @@ pt.1
     get a batch of images and append to the container div
 */
 const getPost = async () => {
-    const response = await fetch(`http://hn.algolia.com/api/v1/search?query=${state.query}&_page=${pageCount}`);
+    const response = await fetch(`http://hn.algolia.com/api/v1/search?query=query&_page=${pageCount}`);
     //console.log(response);
     const data = await response.json();
     //console.log(data[0].body);
