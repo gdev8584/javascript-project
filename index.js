@@ -17,7 +17,7 @@ const getPost = async () => {
     data.map((curElm,index) => {
         const htmlData  = `<div class="posts">
         <p class="post-id">${postCount++}</p>
-        <h2 class="title">${curElm.title}</h2>
+        <h2 class="title">${curElm.name}</h2>
         <p class="post-info"> ${curElm.body}</p>
     </div>`;
 
