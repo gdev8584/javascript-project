@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 html {
     font-size: 10px;
     font-family: 'Montserrat',sans-serif;
@@ -11,16 +12,34 @@ html {
 body {
     background-color: #000;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 .icon-bar {
     width: 100%;
     height: auto;
-    background-color: #000;
+    background-color: transparent;
     overflow: auto;
     position: fixed;
+    z-index: 1;
   }
+  .mobile-nav-icon {
+    width: 4rem;
+    height: 4rem;
+    color: white;
+    z-index: 999;
+}
+.navbar-btn {
+    margin-top: 25px;
+    display: none;
+    background: transparent;
+    cursor: pointer;
+}
+.mobile-nav-icon[name='close-outline'] {
+    display: none;
+}
   
   .icon-bar a {
     float: left;
@@ -224,14 +243,23 @@ h4 {
 }
 input {
     width: 100%;
+    background-color: #414b47;
     margin-left: auto;
     padding: 5px;
     border-radius: 5px;
+    font-weight: 500;
+    font-size: 20px;
+}
+input:focus {
+    background-color: #e0f6ed;
+}
+input::after{
+    background: #e0f6ed !important;
 }
 .name{
     width: 100%;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 18px;
 
 }
 .email {
@@ -245,6 +273,13 @@ textarea {
     padding: 5px;
     border-radius: 5px;
     resize: vertical;
+    background-color: #414b47;
+}
+textarea:focus{
+    background-color: #e0f6ed;
+}
+textarea::after{
+    background-color: #e0f6ed;
 }
 .query {
     width: 100%;
@@ -298,17 +333,44 @@ textarea {
     text-align: center;
 }
 .card:nth-child(2) {
-    background-color: #191919;
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0,0,0,0.8)),url(./assert/as2.jpeg);
     border-radius: 20px;
     padding: 20px 30px;
     height: 365px;
     width: 335px;
     margin: 15px;
+    background-position: center;
     position: relative;
     text-align: center;
     overflow: hidden;
 }
 .card:nth-child(3) {
+    background:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0,0,0,0.8)),url(./assert/as3.JPG);;
+    border-radius: 20px;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 20px 35px;
+    height: 365px;
+    width: 335px;
+    margin: 15px;
+    position: relative;
+    background-position: center;
+    overflow: hidden;
+    text-align: center;
+}
+.card1 {
+    background-color: #191919;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 20px 35px;
+    height: 365px;
+    width: 335px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card2 {
     background-color: #191919;
     background-size: cover;
     border-radius: 20px;
@@ -325,7 +387,7 @@ textarea {
     text-align: center;
     text-decoration: none;
 }
-.card h5{
+.card,.card1,.card2 h5{
     color: antiquewhite;
     font-size: 20px;
     margin-bottom: 15px;
@@ -345,7 +407,7 @@ textarea {
         background-color: black;
         background-size: auto;
 }
-.card .button {
+.button {
     background-color: crimson;
     color: white;
     text-decoration: none;
@@ -355,7 +417,7 @@ textarea {
     border-radius: 20px;
     transition: transform .4s;
 }
-.card .button:hover {
+.button:hover {
     background-color: antiquewhite;
     color: crimson;
     transform: scale(1.1);
@@ -386,6 +448,20 @@ footer {
     text-align: center;
     
 }
+
+.arrowbd{
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.arrow{
+    cursor: pointer;
+}
+.novissible{
+    display: none;
+}
+
 
 @media only screen and (max-width: 834px) {
     .main {
@@ -500,17 +576,43 @@ footer {
         text-align: center;
     }
     .card:nth-child(2) {
+        background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8),rgba(0,0,0,0.8)),url(./assert/as2.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        padding: 20px 35px;
+        height: 365px;
+        width: 300px;
+        margin: 15px;
+        /* position: relative; */
+        text-align: center;
+        overflow: hidden;
+    }
+    .card:nth-child(3) {
         background-color: #191919;
+        background-size: cover;
         border-radius: 20px;
         padding: 20px 35px;
         height: 365px;
         width: 300px;
         margin: 15px;
         position: relative;
-        text-align: center;
         overflow: hidden;
+        text-align: center;
     }
-    .card:nth-child(3) {
+    .card1 {
+        background-color: #191919;
+        background-size: cover;
+        border-radius: 20px;
+        padding: 20px 35px;
+        height: 365px;
+        width: 300px;
+        margin: 15px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+    .card2{
         background-color: #191919;
         background-size: cover;
         border-radius: 20px;
@@ -542,6 +644,26 @@ footer {
         margin-bottom: 25px;
     }
     .card {
+            width: 100%;
+            padding: 100px 0px;
+            background-color: black;
+            background-size: auto;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            transform: translateX(-50%);
+    }
+    .card {
+        width: 100%;
+        padding: 100px 0px;
+        background-color: black;
+        background-size: auto;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+}
+.card {
             width: 100%;
             padding: 100px 0px;
             background-color: black;
@@ -605,7 +727,54 @@ footer {
         letter-spacing: 1px;
         cursor: pointer;
     }
-    
-      
+    .navbar-btn {
+        position: absolute;
+        right: 30px;
+        display: block;
+        z-index: 999;
+        
+    }
+    .icon-bar {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(81, 72, 73);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .icon-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon-bar a {
+        font-size: 40px;
+    }
+    .icon-bar a:hover {
+        width: 100%;
+        background-color: rgb(146, 94, 94);
+      }
+    .active1 .icon-bar {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+    .active1 .mobile-nav-icon[name='close-outline'] {
+        display: block;
+    }
+    .active1 .mobile-nav-icon[name='menu-outline'] {
+        display: none;
+    } 
+    .novissible{
+        display: none;
+    }
 }
