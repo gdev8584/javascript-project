@@ -8,7 +8,7 @@ window.addEventListener("load", () => {
     pad.addEventListener("click", function() {
       sounds[index].currentTime = 0;
       sounds[index].play();
-      video.currentTime += 10;
+      video.currentTime =0;
       video.play();
     });
   });
