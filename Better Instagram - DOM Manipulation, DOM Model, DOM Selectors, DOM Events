@@ -1,0 +1,75 @@
+Better Instagram:-----------
+Given a grid of 6 pictures. Allow repositioning of the pics with mouse drag. This is one feature that even Instagram doesn't support as of now!
+
+Acceptance Criteria:
+
+The user has to create an interface with 6 divs with ids as div1, div2, div3, div4, div5 and div6. Each div should have a child node that is an img tag.
+
+Each image tag inside the div should have ids as drag1, drag2, drag3, drag4, drag5 and drag6. The image inside div with id=div1 should have id=drag1, similar for other 5 blocks.
+
+All the 6 images should be draggable and all 6 divs should be droppable so as to enable users to rearrange the images in any pattern.
+
+When an image is dragged and dropped from one div to another and the div on which we are going to drop contains an image, the images should be swapped between the div from where the image was picked and the div where the image is being dropped.
+
+
+Please use images that are <10kb
+
+------------------------------------
+html
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+script
+const imgSrc = [
+    "https://gamedata.britishcouncil.org/sites/default/files/attachment/number-8_1.jpg",
+    "https://cdn.jjkeller.com/wcsstore/CVCatalogAssetStore/images/product/1000x1000/2297.jpg",
+    "https://www.wtbtraffic.com/pub/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/3/5/352snw-_2964_.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoMbGV1ULD1u_9RUWErypD7livA2msWnb5Xw&usqp=CAU",
+    "https://images-na.ssl-images-amazon.com/images/I/31JniuDxNBL.jpg",
+    "https://images-na.ssl-images-amazon.com/images/I/31JNiTM00pL.jpg"
+]
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  let data1 = ev.dataTransfer.getData("text");
+  
+  let src = event.target.src;
+  let id = event.target.id;
+  let img1 = document.getElementById(data1);
+  event.target.id = img1.id;
+  event.target.src = img1.src;
+  img1.id = id;
+  img1.src = src;
+}
+
+function loadImgs(){
+    for(let i=0 ; i<6 ; i++){
+        const newImg = document.createElement("img");
+        const currDivId = "div"+(i+1);
+        const currImgId = "drag"+(i+1);
+        const currDiv = document.getElementById(currDivId);
+        // currDiv.innerText = i+1;
+        // currDiv.innerText = "Hello World";
+        console.log(currDiv);
+        newImg.setAttribute("src", imgSrc[i]);
+        newImg.setAttribute("id", currImgId);
+        newImg.setAttribute("draggable", "true");
+        newImg.setAttribute("ondragstart", "drag(event)");
+
+        currDiv.appendChild(newImg);
+    }
+}
+loadImgs();
